@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Advisory Subscription</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Form box */
+form {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Legend */
+legend {
+    background-color: darkblue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Input boxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border: 2px solid darkblue;
+    outline: none;
+}
+
+/* Submit and Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Submit button color */
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+/* Reset button */
+input[type="reset"] {
+    background-color: lightgray;
+}
+
+/* Reset hover effect */
+input[type="reset"]:hover {
+    background-color: gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Heatwave Advisory Subscription</h1>
+
+<form>
+
+<fieldset>
+
+<legend>Subscription Details</legend>
+
+<label>Name:</label><br>
+<input type="text" name="name"><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email"><br><br>
+
+<label>Mobile Number:</label><br>
+<input type="tel" name="mobile"><br><br>
+
+<label>Select Region:</label><br>
+
+<select name="region">
+    <option>North</option>
+    <option>Central</option>
+    <option>South</option>
+    <option>West</option>
+</select>
+
+<br><br>
+
+<label>Preferred Language:</label><br>
+
+<input type="radio" name="language" value="English">
+English
+
+<input type="radio" name="language" value="Hindi">
+Hindi
+
+<br><br>
+
+<label>Alert Types:</label><br>
+
+<input type="checkbox" name="alert" value="heatwave">
+Heatwave Alert
+
+<input type="checkbox" name="alert" value="weather">
+Weather Forecast
+
+<input type="checkbox" name="alert" value="emergency">
+Emergency Advisory
+
+<br><br>
+
+<input type="submit" value="Subscribe">
+<input type="reset" value="Reset">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
